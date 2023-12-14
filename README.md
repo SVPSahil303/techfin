@@ -40,6 +40,6 @@ Dashboard App is a dynamic and customizable tool that empowers you to visualize 
 ![image](https://github.com/SVPSahil303/techfin/assets/153804626/43042d2f-4a58-4c36-8f54-8cdfea35de7d)
 
 ## **Procedure**
-Step 1 - Run test.py and click the link which will be appearing in your terminal.
-Step 2 - Once link is opened, you will come to the login and register page, register with your Username, Email_id and Password in the registration page. Further, always login to the site with your registered email_id and password.
-Step 3 - Now you have logged in to our website, therefore now you can use it to track your expenses, calculate your fixed or recuuring deposit and etc.
+- **Step 1** - Run test.py and click the link which will be appearing in your terminal.
+- **Step 2** - Once link is opened, you will come to the login and register page, register with your Username, Email_id and Password in the registration page. Further, always login to the site with your registered email_id and password.
+- **Step 3** - Now you have logged in to our website, therefore now you can use it to track your expenses, calculate your fixed or recuuring deposit and etc.
