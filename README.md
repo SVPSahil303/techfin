@@ -38,6 +38,26 @@ Dashboard App is a dynamic and customizable tool that empowers you to visualize 
 - **User-Friendly Interface:** A clean and user-friendly interface makes it easy to create, edit, and share dashboards effortlessly.
 
 ![image](https://github.com/SVPSahil303/techfin/assets/153804626/43042d2f-4a58-4c36-8f54-8cdfea35de7d)
+# FD Recurring Calculator
+
+🔄 **Effortlessly Plan Your Fixed Deposits with the FD Recurring Calculator**
+
+The FD Recurring Calculator is a powerful tool designed to help you plan and visualize your savings with Fixed Deposits. Whether you're considering regular deposits or want to project your returns, this calculator simplifies the process, allowing you to make informed decisions about your financial future.
+
+## Key Features
+
+- **Recurring Deposits:** Plan your investments with recurring deposits, and see how your savings grow over time.
+
+- **Interest Projection:** Estimate the interest earned on your Fixed Deposits by adjusting the tenure and deposit amounts.
+
+- **User-Friendly Interface:** An intuitive interface makes it easy for both beginners and experienced users to navigate and calculate.
+
+- **Flexible Options:** Customize your calculations based on interest rates, tenure, and deposit frequency to align with your financial goals.
+
+- **Visual Reports:** Visualize your savings journey with interactive charts and reports, making it easier to understand your investment progress.
+
+
+![image](https://github.com/SVPSahil303/techfin/assets/153804626/43d3317f-f09f-4d84-af52-c63cc412b582)
 
 ## **Procedure**
 - **Step 1** - Run test.py and click the link which will be appearing in your terminal.
