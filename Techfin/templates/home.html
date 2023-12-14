@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home page Design</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/style.css')}}">
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <a href="#">Tech<span>fin.</span></a>
+        </div>
+        <ul>
+          <li><a href="/home" style="color:red;">Home</a></li>
+          <li><a href="/dashboard">Dashboard</a></li>
+          <li><a href="/fdcal">FD Calculator</a></li>
+          <li><a href="/about">Contact</a></li>
+        </ul>
+        <div class="button">
+          <a href="/about" class="btn">{{user.username }}</a>
+          <a href="/logout" class="btn">logout</a>
+        </div>
+      </nav>
+      <div class="content">
+        <h2>Hello,<br>FinTech</h2>
+        <p>Expenses management<br>You Can Find Me On GitHub.</p>
+      </div>
+      <div class="link">
+        <a href="#" class="hire">Track your Expenses</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .backtohome{
+            position: absolute;
+            top: 5%;
+            right: 7%;
+            width: 9vw;
+            height: 2.5vw;
+            border-radius: 5px;
+            outline: 6px groove gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .backtohome a{
+            color: white;
+            text-decoration: none;
+            font-size: 1.2vw;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud detection app</title>
+    <link rel="shortcut icon" href="\static\favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/style.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="">
+    <div class="backtohome"><a href="templates/home.html">Home Page</a></div>
+    <div class="container" id="container">
+        <form action="/predict" method="post" name="output_form" class="form" id="form">
+            <div class="values" id="values">
+                <br><br><br>
+                <input type="text" name="time" ng-model="time" class="time" placeholder="time" required>
+                <b class="b b_time">*</b>
+                <input type="text" name="val" ng-model="val" class="val" placeholder="30(PCA) values" required>
+                <b class="b b_val">*</b>
+                <div class="model_class">
+                    <h2>Select model</h2>
+                    <input type="radio" required name="model" value="lor" id="lor"><label for="lor">Logistic regression</label>
+                    <input type="radio" required name="model" value="rfc" id="rfc"><label for="rfc">Random forest classifier</label>
+                    <input type="radio" required name="model" value="lr" id="lr"><label for="lr">Linear Regression</label>
+                </div>
+                <div class="variation_class">
+                    <h2>Select variation</h2>
+                    <input type="radio" required name="variation" value="0" id="lor"><label for="lor">80-20</label>
+                    <input type="radio" required name="variation" value="1" id="rfc"><label for="rfc">75-25</label>
+                    <input type="radio" required name="variation" value="2" id="lr"><label for="lr">70-30</label>
+                </div>
+            </div>
+            
+            <input type="submit" value="Check" class="submit" id="submit" 
+            ng-show="output_form.time.$valid &&
+                                output_form.val.$valid" >
+            <div class="submit_dummy" id="submit_dummy" 
+                        ng-show="output_form.time.$invalid ||
+                                output_form.val.$invalid ">Check</div>
+        </form>
+    </div>
+
+    <script src="{{ url_for('static',filename='script.js') }}"></script>
+    <script>
+        backgroundTheme();
+        
+        
+    </script>
+</body>
+</html>

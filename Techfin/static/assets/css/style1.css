@@ -1,0 +1,92 @@
+body {
+            font-family: 'Arial', sans-serif;
+             /* Pastel background gradient */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .calculator-wrap {
+           background-color: hsla(0, 0%, 100%, .01);
+            border: 2px solid hsla(0, 0%, 100%, .7);
+            padding: 2.5rem 1rem;
+            color: var(--white-color);
+            border-radius: 1rem;
+            backdrop-filter: blur(16px);
+            padding: 20px;
+            width: 42vw;
+            height: 80vh;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+			box-shadow: 0 0 2px,0 1px 3px, inset 0 0 5px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+        table span{
+          color: red;
+          font-size: 1vw;
+        }
+
+        input[type="text"],
+        select {
+            width: calc(100% - 12px);
+            padding: 6px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: none;
+			border-bottom: 3px solid rgb(176, 176, 177);
+            box-sizing: border-box;
+			outline: none;
+			color:#F0F8FF;
+            background-color: inherit; /* Light gray input background */
+        }
+		select{
+			border: 2px solid gray;
+			border-radius: 4px;
+		}
+        input[type="button"],
+        input[type="reset"] {
+            background-color: #f57c00; /* Orange button background */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        input[type="button"]:hover,
+        input[type="reset"]:hover {
+            background-color: #e65100; /* Darker orange on hover */
+        }
+
+        .error {
+            color: red;
+        }
+
+        .td-text{
+            text-align:left;
+            color:#F0F8FF;
+            padding:20px;
+        }
+
+        .td-text-1{
+            text-align:center;
+            color:#F0F8FF;
+            padding:10px;
+        }

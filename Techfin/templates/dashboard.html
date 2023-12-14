@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/style.css')}}">
+        <title>Finance Dashboard</title>
+        <style>
+
+            .bar-graph{
+            position:absolute;
+            bottom:0;
+            right:10%;
+
+            }
+    .right-align{
+    width:15vw;
+    position:absolute;
+    left:80%;
+    top:20%
+    }
+.bar{
+top:65%;
+}
+          .heading{
+            margin-top:2%;
+            font-size:2.5vw
+          }
+            .summary{
+                position:absolute;
+                top:35%;
+                left:15%;
+                width:25vw;
+
+            }
+            .summary *,.history *{
+            margin:4%;
+            font-size:1.3vw;
+            }
+            .history{
+                position:absolute;
+                top:67%;
+                left:42%;
+                width:25vw;
+            }
+
+        </style>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+        <div class="logo">
+          <a href="#">Tech<span>fin.</span></a>
+        </div>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/dashboard" style="color:red;">Dashboard</a></li>
+          <li><a href="/fdcal">FD Calculator</a></li>
+          <li><a href="/about">Contact</a></li>
+        </ul>
+        <div class="button">
+          <a href="/about" class="btn">{{user.username }}</a>
+          <a href="/logout" class="btn">logout</a>
+        </div>
+      </nav>
+
+            <center class="heading">Finance Dashboard</center>
+
+    <div class="summary">
+        <h2>Summary</h2>
+        <ul>
+            <li>Total Income: ${{ total_income }}</li>
+            <li>Total Expenses: ${{ total_expenses }}</li>
+            <li>Savings: ${{ savings }}</li>
+        </ul>
+    </div>
+
+    <div class="history">
+        <h2>Transaction History</h2>
+            <ul>
+                {% for transaction in finance_data %}
+
+                        <li>{{ transaction['category'] }} : ${{ transaction['amount'] }}</li>
+
+                {% endfor %}
+            </ul>
+    </div>
+
+    <div class="chart-container">
+            <div class="right-align">
+                <h2>Pie Chart</h2>
+                <canvas id="pieChart" width="100" height="100"></canvas>
+            </div>
+<br><br><br>
+            <div class="right-align bar">
+                <h2>Bar Graph</h2>
+                <canvas id="barGraph" width=10" height="10"></canvas>
+            </div>
+    </div>
+        </div>
+    <script>
+        // JavaScript code for initializing and updating charts
+        var pieChartCanvas = document.getElementById('pieChart').getContext('2d');
+        var barGraphCanvas = document.getElementById('barGraph').getContext('2d');
+
+        var pieChart = new Chart(pieChartCanvas, {
+            type: 'pie',
+            data: {
+                labels: {{ labels | tojson | safe }},
+                datasets: [{
+                    data: {{ amounts | tojson | safe }},
+                    backgroundColor: ['#36A2EB', '#FFCE56', '#FF6384'],
+                }]
+            }
+        });
+
+        var barGraph = new Chart(barGraphCanvas, {
+            type: 'bar',
+            data: {
+                labels: {{ labels | tojson | safe }},
+                datasets: [{
+                    label: 'Amount',
+                    data: {{ amounts | tojson | safe }},
+                    backgroundColor: ['#36A2EB', '#FFCE56', '#FF6384'],
+                }]
+            }
+        });
+    </script>
+    </body>
+</html>
+

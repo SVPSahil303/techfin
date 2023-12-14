@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>Banking system</title>
+		<script src="{{url_for('static',filename='assets/javascript/fd.js')}}"></script>
+		<link rel="stylesheet" href="{{url_for('static',filename='assets/css/style1.css')}}">
+
+		<style>
+        .backtohome{
+            position: absolute;
+            top: 5%;
+            right: 7%;
+            width: 9vw;
+            height: 2.5vw;
+            border-radius: 5px;
+            outline: 6px groove gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .backtohome a{
+            color: white;
+            text-decoration: none;
+            font-size: 1.2vw;
+        }
+    </style>
+	</head>
+
+	<body background="https://source.unsplash.com/random?black">
+	<div class="backtohome"><a href="/home">Home Page</a></div>
+		<div class="calculator-wrap">
+			<h2 class="td-text-1">Deposit</h2>
+			<form action="#" method="post" name="f1">
+				<table>
+					<tr>
+						<td class="td-text">Type of deposit</td>
+						<td>
+							<div class="td-text">
+							<input type="radio" name="depositType" value="fd" onClick="checkType();">Fixed deposit&nbsp;<input type="radio" name="depositType" value="rd" onClick="checkType();">Recurring deposit  &nbsp;<span id="depositTypeErr" style="font-size: 2vw;color: red;"> * </span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="td-text">Principal Amt.</td>
+						<td><span id="amtErr"> * required</span><br><input type="text" name="amt" onKeyUp="checkAmt();" onChange="checkAmt();" required/></td>
+					</tr>
+					<tr>
+						<td class="td-text">No. of Years</td>
+						<td><span id="yearsErr"> * required</span><br><input type="text" name="years" onKeyUp="checkYears();" onChange="checkYears()" required/></td>
+					</tr>
+					<tr>
+						<td class="td-text">Interest</td>
+						<td><span id="rateErr"> * required</span><br><input type="text" name="rate" onKeyUp="checkRate();" onChange="checkRate();" required/></td>
+					</tr>
+					<tr>
+						<td class="td-text">Compounding freq.</td>
+						<td>
+              <span id="freqErr"> * required</span><br>
+							<select name="freq" onKeyUp="checkFreq();" onChange="checkFreq();" required>
+								<option value="">Select</option>
+								<option value=12>Monthly</option>
+								<option value=4>Quarterly</option>
+								<option value=2>Half yearly</option>
+								<option value=1>Yearly</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="td-text">Interest :</td>
+						<td class="td-text"><b>Rs. </b><b id="interest"></b></td>
+					</tr>
+					<tr>
+						<td class="td-text">Maturity :</td>
+						<td class="td-text"><b>Rs. </b><b id="maturity"></b></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="button" value="Calulate" onClick="cal()"/>&nbsp;&nbsp;<input type="reset" value="Clear"/></td>
+					</tr>
+
+				</table>
+			</form>
+		</div>
+
+	</body>
+
+
+
+</html>

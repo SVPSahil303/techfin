@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home page Design</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/style.css')}}">
+  <style>
+  .card-wrap{
+    display:flex;
+    justify-content:space-between;
+    align-item:center;
+    }
+    .card{
+      width:23%;
+      aspect-ratio:5/2;
+      border:3px groove gray;
+      border-radius:15px;
+      box-shadow:0 0 2px gray,0 0 5px whitesmoke,inset 0 0 3px black;
+    }
+    .card img{
+      width:60%;
+      aspect-ratio:1;
+      border-radius:50%;
+      margin-left:20%;
+    }
+    .card-details{
+      margin:4vh;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <a href="#">Tech<span>fin.</span></a>
+        </div>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/dashboard">Dashboard</a></li>
+          <li><a href="/fdcal">FD Calculator</a></li>
+          <li><a href="/about" style="color:red;">Contact</a></li>
+        </ul>
+        <div class="button">
+          <a href="#" class="btn">{{user.username }}</a>
+          <a href="/logout" class="btn">logout</a>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="about-section">
+  <h1>About Us Page</h1>
+  <p>
+
+    Welcome to TechFin, where managing your finances becomes simpler and more efficient than ever. We understand that keeping track of expenses can be a daunting task, and that's why we're here to simplify the process for you.</p>
+</div>
+        <br>
+<br>
+<h2 style="text-align:center">Our Team</h2>
+
+
+      </div>
+<div class="card-wrap">
+    <div class="card">
+      <img src="https://source.unsplash.com/random?nature" alt="nasir" >
+      <div class="card-details">
+        <h2>Nasir Shaikh</h2>
+        <p class="title">Web developer</p>
+
+        <p>nasir@example.com</p>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="https://source.unsplash.com/random?nature" alt="Sahil" >
+      <div class="card-details">
+        <h2>Sahil</h2>
+        <p class="title">Backend</p>
+        <p>Sahil@example.com</p>
+      </div>
+    </div>
+
+  <div class="card">
+      <img src="https://source.unsplash.com/random?nature" alt="nasir" >
+      <div class="card-details">
+        <h2>Talha Khan</h2>
+        <p class="title">Web developer</p>
+
+        <p>talha@example.com</p>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="https://source.unsplash.com/random?nature" alt="Sahil" >
+      <div class="card-details">
+        <h2>Shreyas</h2>
+        <p class="title">Backend</p>
+        <p>shreyas@example.com</p>
+      </div>
+    </div>
+
+
+
+</div>
+  </body>
+</html>
