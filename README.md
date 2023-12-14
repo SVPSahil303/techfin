@@ -94,6 +94,7 @@ Thank you for being part of our journey!
 ---
 
 *Crafted with ❤️ by [Techfin]*
+![image](https://github.com/SVPSahil303/techfin/assets/153804626/ca1e7cb9-76f6-41d9-a2f1-e6b4d23ea5e5)
 
 ## **Procedure**
 - **Step 1** - Run test.py and click the link which will be appearing in your terminal.
