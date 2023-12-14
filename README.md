@@ -63,7 +63,37 @@ The FD Calculator is a powerful tool designed to help you plan and visualize you
 # Recurring Calculator
 ![image](https://github.com/SVPSahil303/techfin/assets/153804626/34234245-0327-478a-8a16-5005f0b4bd1d)
 
+# About Us
 
+🌟 **Welcome to Our Story**
+
+At Techfin, we believe in the power of innovation and the impact of technology on transforming lives. Our journey began with a passion for creating solutions that make a difference in the world.
+
+## Our Mission
+
+To empower individuals and businesses by providing cutting-edge tools and applications that simplify complex tasks, enhance productivity, and contribute to a brighter future.
+
+## What Drives Us
+
+- **Innovation:** We thrive on pushing the boundaries of what's possible, continuously seeking new and better ways to solve challenges.
+
+- **User-Centric Approach:** Your needs are at the core of our creations. We design with you in mind, ensuring a seamless and enjoyable experience.
+
+- **Collaboration:** We believe in the strength of collaboration, both within our team and with our users. Together, we can achieve greatness.
+
+## Meet the Team
+
+Our diverse team of passionate individuals brings a wealth of experience and creativity to the table. From developers to designers, we share a common goal – making a positive impact through technology.
+
+## Contact Us
+
+Have questions, suggestions, or just want to say hello? Feel free to reach out at [contact@yourcompany.com](mailto:contact@yourcompany.com).
+
+Thank you for being part of our journey!
+
+---
+
+*Crafted with ❤️ by [Techfin]*
 
 ## **Procedure**
 - **Step 1** - Run test.py and click the link which will be appearing in your terminal.
