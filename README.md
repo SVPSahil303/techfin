@@ -56,9 +56,9 @@ The FD Calculator is a powerful tool designed to help you plan and visualize you
 
 - **Visual Reports:** Visualize your savings journey with interactive charts and reports, making it easier to understand your investment progress.
 
-![image](https://github.com/SVPSahil303/techfin/assets/153804626/fcc06571-659e-44ad-a120-5d00eab40420)
+![image](https://github.com/SVPSahil303/techfin/assets/153804626/d1be18cd-22c6-4928-b8d1-e9b4feac6be6)
+![image](https://github.com/SVPSahil303/techfin/assets/153804626/5d0841ab-5975-4792-afeb-97926a5e25a8)
 
-![image](https://github.com/SVPSahil303/techfin/assets/153804626/43d3317f-f09f-4d84-af52-c63cc412b582)
 
 # Recurring Calculator
 ![image](https://github.com/SVPSahil303/techfin/assets/153804626/34234245-0327-478a-8a16-5005f0b4bd1d)
